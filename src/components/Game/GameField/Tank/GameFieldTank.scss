@@ -1,0 +1,19 @@
+@use 'sass:map';
+@use '../../../../theme' as theme;
+
+.game-field__tank {
+  $user-color: theme.$user-color;
+  $enemy-color: theme.$enemy-color;
+
+  position: absolute;
+
+  border-radius: 50% 50% 0 0;
+
+  &_user {
+    background: linear-gradient(black 50%, $user-color 50%);
+  }
+
+  &_enemy {
+    background: linear-gradient(black 50%, $enemy-color 50%);
+  }
+}

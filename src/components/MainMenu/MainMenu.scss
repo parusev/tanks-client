@@ -1,0 +1,9 @@
+.main-menu {
+  text-align: center;
+}
+
+.opened-games {
+  &__list {
+    list-style: none;
+  }
+}
