@@ -4,11 +4,10 @@ import WithStateContext from '../../contexts/StateContext/WithStateContext';
 import WithWebSocketContext from '../../contexts/WebSocketContextProvider/WithWebSocketContext';
 import Main from '../Main';
 
-// TODO set relative URL
 function App() {
   return (
     <WithStateContext>
-      <WithWebSocketContext url="ws://localhost:3000/ws">
+      <WithWebSocketContext url={process.env.REACT_APP_SERVER_URL as string}>
         <WithBffContext>
           <Main />
         </WithBffContext>
