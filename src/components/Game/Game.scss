@@ -1,8 +1,8 @@
 .game {
   display: flex;
 
+  min-width: fit-content;
+
   align-items: center;
   justify-content: center;
-
-  min-width: fit-content;
 }
